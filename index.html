@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VetRx System Homepage</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Icons Link -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="header-logo">
+        <img src="logo.png" alt="Logo">
+        <h1>VetRx System</h1>
+      </div>
+      <ul class="menu-links">
+        <li class="join-btn"><a href="register.html">Log In</a></li>
+        <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+      </ul>
+      <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+    </nav>
+  </header>
+
+  <section class="hero-section">
+    <div class="content">
+      <h1>Care Made Simple: Quick Prescriptions for Happy Animals!</h1>
+
+      <div class="popular-tags">
+        Popular:
+        <ul class="tags">
+          <li><a href="#">Animal Healthcare</a></li>
+          <li><a href="#">Prescription System</a></li>
+          <li><a href="#">First Aid Guidance </a></li>
+          <li><a href="#">Medication Service</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+  <script>
+    const header = document.querySelector("header");
+    const hamburgerBtn = document.querySelector("#hamburger-btn");
+    const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+    // Toggle mobile menu on hamburger button click
+    hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+    // Close mobile menu on close button click
+    closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+  </script>
+</body>
+</html>
